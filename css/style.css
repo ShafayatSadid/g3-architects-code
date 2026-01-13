@@ -187,6 +187,65 @@ nav h3{
     color: #727272;
 }
 
+
+.section3{
+    padding-top: 130px;
+    max-width: 1440px;
+    align-items: top;
+    gap: 146px;
+}
+
+.section3 img{
+    width: 100%;
+}
+
+.section3-content h3{
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+    max-width: 468px;
+}
+
+.section3-content p{
+    font-size: 1rem;
+    line-height: 26px;
+    max-width: 586px;
+    margin-bottom: 30px;
+}
+
+.box{
+    padding: 30px 42px 30px 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.box h5{
+    font-size: 1.25rem;
+    color: #131313;
+}
+
+.box p{
+    font-size: 1rem;
+    color: #727272;
+}
+
+.button-bold{
+    padding: 46px 42px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    margin-left: -92px;
+    margin-top: -127px;
+}
+
+.bold{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 /* footer */
 
 footer{
@@ -285,6 +344,15 @@ footer{
     .copyright{
         padding: 38px 10px;
     }
+
+    .section3{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .button-bold{
+        margin-left: -20px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width: 992px) {
@@ -336,4 +404,12 @@ footer{
         padding: 38px 10px;
     }
 
+    .section3{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .button-bold{
+        margin-left: -20px;
+    }
 }
