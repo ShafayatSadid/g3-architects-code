@@ -12,6 +12,9 @@
     display: flex;
 }
 
+.display-hide{
+    display: none;
+}
 .main-color{
     color:#131313;
 }
@@ -24,8 +27,17 @@
     color:#727272;
 }
 
+.fourth-color{
+    color: #FF900E;
+}
+
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .button{
@@ -86,6 +98,7 @@ nav h3{
     max-width: 862px;
     margin: 0 auto;
     margin-bottom: 50px;
+    padding: 10px;
 }
 
 .banner img{
@@ -93,8 +106,90 @@ nav h3{
     max-width: 1440px;
 }
 
-/* Media Query */
 
+/* Main Section */
+.section1{
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    gap: 73px;
+}
+
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* width: 100%; */
+}
+
+
+
+.section1-content{
+    max-width: 537px;
+}
+
+.section1-content h3{
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+}
+
+.section1-content p{
+    font-size: 1rem;
+    line-height: 26px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.section2{
+    padding:130px 100px;
+}
+
+
+.section2-content h3{
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+}
+
+.section2-content p{
+    font-size: 1rem;
+    line-height: 26px;
+    margin-bottom: 100px;
+    max-width: 542px;
+}
+
+.fact-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card{
+    width: 241px;
+    height: 241px;
+    border: 2px solid #FF900E;
+    text-align: center;
+    /* align-items: center; */
+    border-radius: 8px;
+    /* padding-top: 45px; */
+}
+
+.card img{
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.card h4{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-bottom: 5px;
+}
+
+.card h5{
+    font-size: 20px;
+    color: #727272;
+}
+
+
+/* Media Query */
+/* For Mobile */
 @media screen and (max-width: 576px) {
     .display-flex{
         flex-direction: column;
@@ -107,4 +202,56 @@ nav h3{
     nav ul {
         margin: 0 auto;
     }
+
+    nav ul li a{
+        margin: 0 auto;
+    }
+
+    .banner p{
+        width: 100%;
+    }
+    .team-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section1-content{
+        margin-left: 30px;
+        padding: 15px;
+    }  
+
+    .section2{
+        padding:130px 30px;
+    }
+
+    .fact-cards{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .display-flex{
+        flex-direction: column;
+    }
+    nav h3{
+        margin: 0 auto;
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+
+    nav ul li a{
+        margin: 0 auto;
+    }
+
+    .section2{
+        padding:130px 60px;
+    }
+
+    .fact-cards{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 70px;
+    }
+
 }
