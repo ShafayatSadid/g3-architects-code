@@ -12,7 +12,7 @@
     display: flex;
 }
 
-.display-hide{
+.hide{
     display: none;
 }
 .main-color{
@@ -187,7 +187,44 @@ nav h3{
     color: #727272;
 }
 
+/* footer */
 
+footer{
+    text-align: center;
+    padding: 0 240px 240px 240px;
+}
+
+.footer-content h3{
+    font-size: 2.8rem;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+
+.footer-content p{
+    font-size: 1rem;
+    line-height: 26px;
+    max-width: 542px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.sponsors-name{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsors-name img{
+    filter: grayscale(100%);
+}
+
+
+.copyright{
+    padding: 38px 410px;
+    font-size: 16px;
+    background-color: #FFF4E7;
+    margin-top: 130px;
+    border-radius: 8px;
+}
 /* Media Query */
 /* For Mobile */
 @media screen and (max-width: 576px) {
@@ -215,17 +252,38 @@ nav h3{
     }
 
     .section1-content{
-        margin-left: 30px;
+        /* margin-left: 30px; */
         padding: 15px;
+        text-align: center;
     }  
 
     .section2{
-        padding:130px 30px;
+        padding:130px 10px;
+        text-align: center;
     }
 
     .fact-cards{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
+        margin-left: 70px;
+    }
+
+    footer{
+        text-align: center;
+        padding: 0 10px 40px 10px;
+    }
+
+    .sponsors-name{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+        margin-left: 100px;
+    }
+
+    
+
+    .copyright{
+        padding: 38px 10px;
     }
 }
 
@@ -245,6 +303,12 @@ nav h3{
         margin: 0 auto;
     }
 
+    .section1-content{
+        margin-right: 120px;
+        padding: 15px;
+    }  
+
+
     .section2{
         padding:130px 60px;
     }
@@ -252,6 +316,24 @@ nav h3{
     .fact-cards{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 70px;
+    }
+
+    footer{
+        text-align: center;
+        padding: 0 10px 40px 10px;
+    }
+
+    .sponsors-name{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        margin-left: 80px;
+    }
+
+    
+
+    .copyright{
+        padding: 38px 10px;
     }
 
 }
