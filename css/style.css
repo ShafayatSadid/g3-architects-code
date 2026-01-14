@@ -324,7 +324,7 @@ footer{
     .fact-cards{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
-        margin-left: 70px;
+        margin-left: 60px;
     }
 
     footer{
